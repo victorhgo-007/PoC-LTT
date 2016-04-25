@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html ng-app="Repo_Indi" lang="es">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Prueba Concepto</title>
+
+    <!-- Cargamos el javascript de angular -->	
+    <script type="text/javascript" src="./js/angular.min.js"></script>
+    <script type="text/javascript" src="./js/core.js"></script>
+	<script type="text/javascript" src="./js/sweetalert.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="./css/estilos.css" />
+	<link type="text/css" rel="stylesheet" href="./css/sweetalert.css" />
+	
+
+</head>
+
+<body ng-controller="MainController" ng-init="get_tsec()">
+	<header id="cabecera">
+		<img src="img/logo1.jpg" alt="logo" width="10%" height="10%"/>
+		<p style="display:inline;">Prueba Concepto</p>
+	</header>
+    <div id="tsec">
+        <h3>Obtencion de Tsec</h3>
+        <p>BODY: </p>
+        <textarea rows="4" cols="60" ng-model="tsec.body"></textarea>
+        <button ng-click="get_tsec();">Enviar</button>
+        <p>Tsec: </p>
+        <textarea rows="4" cols="60" ng-model="tsec.respuesta"></textarea>
+		 <p>---------------------------------------------------------------</p>
+    </div>
+   
+    <div id="trucha-move">
+        <h3>Trucha Move</h3>      
+		<p>Env&iacute;a mensaje de 5 car&aacute;cteres y lo retorna en may&uacute;sculas.</p>		
+        <p>Body:</p>
+		<textarea rows="4" cols="60" ng-model="move.body"></textarea>
+        <button ng-click="get_move();">Enviar</button>
+        <!--<p>Respuesta: <input type="text" value="{{move.respuesta}}"/> </p>-->
+        <p>Respuesta:</p>
+        <textarea rows="4" cols="60">{{move.respuesta}}</textarea>
+		<p>---------------------------------------------------------------</p>
+    </div>
+    
+    <div id="trucha-moveheavier">
+        <h3>Trucha MoveHeavier</h3>
+        <p>Env&iacute;a un mensaje y retorna en uno m&aacute;s pesado.</p>
+		<p>Body:</p>
+        <textarea rows="4" cols="60" ng-model="moveheavier.body"></textarea>
+        <button ng-click="get_moveheavier();">Enviar</button>
+        <!--<p>Respuesta: <input type="text" value="{{moveheavier.respuesta}}"/> </p>-->
+		<p>Respuesta:</p>
+        <textarea rows="4" cols="60">{{moveheavier.respuesta}}</textarea>
+		<p>---------------------------------------------------------------</p>
+    </div>
+    
+    <div id="trucha-delay">
+        <h3>Trucha Delay</h3>
+        <p>Devuelve estatus de una petici&oacute;n.</p>
+		<p>Body:</p>
+        <textarea rows="4" cols="60" ng-model="delay.body"></textarea>
+        <button ng-click="get_delay();">Enviar</button>
+        <!--<p>Respuesta: <input type="text" value="{{delay.respuesta}}"/> </p>-->
+        <p>Respuesta:</p>
+		<textarea rows="4" cols="60">{{delay.respuesta}}</textarea>
+		<p>---------------------------------------------------------------</p>
+    </div>
+</body>
+
+</html>
