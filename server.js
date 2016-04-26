@@ -20,7 +20,7 @@ app.set('title', 'Lanzador de Transacciones Trucha');
 // Cargamos los endpoints
 require('./app/routes.js')(app);
 
-// Escucha en el puerto 80 y corre el server
+// Escucha en el puerto 8080 y corre el server
 app.listen(port, function() {
 	console.log('App escuchando por el puerto: ' + port);
 });
