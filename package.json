@@ -2,9 +2,9 @@
 	"name": "PoC-LTT",
 	"version": "0.0.0",
 	"private": true,
-	"description": "Aplicación creada para Arquitectura Front-End",
+	"description": "Aplicaciï¿½n creada para Arquitectura Front-End",
 	"main": "server.js",
-	"author": "AKRM, VHGO"
+	"author": "AKRM, VHGO",
 	"scripts": {
 		"start": "node ./bin/www"
 	},
